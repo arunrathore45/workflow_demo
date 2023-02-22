@@ -1,4 +1,5 @@
 name: Deploying Docker image to ECR
+run-name: Image deployment
 on: [push]
 
 jobs:
