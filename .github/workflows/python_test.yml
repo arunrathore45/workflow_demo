@@ -6,6 +6,9 @@ jobs:
     build:
           runs-on: ubuntu-latest
           steps:
+                name: Setup Python
+                uses: actions/setup-python@v4.5.0
+
                 name: Installing latest python
                 uses: actions/setup-python@v4.5.0
                     with:
