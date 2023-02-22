@@ -3,7 +3,7 @@ run-name: Image deployment
 on: [push]
 
 jobs:
-  Deploy Image:
+  Deploy_Image:
     runs-on: ubuntu-latest
     steps:
       - name: Checkot repository for runner
