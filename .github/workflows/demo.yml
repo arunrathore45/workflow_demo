@@ -1,5 +1,5 @@
 name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: ${{ github.actor }} is testing out GitHub Actions for migration 🚀
 on: [push]
 jobs:
   Explore-GitHub-Actions:
@@ -16,3 +16,9 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo " Just testing second job "
+      - run: echo " ${{ github.actor }}  is just testing new stuff "
+  
